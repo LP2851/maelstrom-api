@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=maelstrom-api'
+      - 'POSTGRES_PASSWORD=maelstrom'
+      - 'POSTGRES_USER=maelstrom'
+    ports:
+      - '5432:5432'
