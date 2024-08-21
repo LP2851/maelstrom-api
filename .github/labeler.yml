@@ -1,0 +1,10 @@
+release:
+  - base-branch: 'master'
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: '**/*.md'
+
+db-migration:
+  - changed-files:
+      - any-glob-to-any-file: 'src/main/resources/db/migration/**'
