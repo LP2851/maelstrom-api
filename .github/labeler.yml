@@ -9,6 +9,10 @@ db-migration:
   - changed-files:
       - any-glob-to-any-file: 'src/main/resources/db/migration/**'
 
+gh-workflow:
+  - changed-files:
+      - any-glob-to-any-file: '.github/**/**'
+
 # Add 'feature' label to any PR where the head branch name starts with `feature` or has a `feature` section in the name
 feature:
   - head-branch: ['^feature', 'feature']
