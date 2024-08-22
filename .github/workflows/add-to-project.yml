@@ -16,4 +16,4 @@ jobs:
       - uses: actions/add-to-project@v1.0.2
         with:
           project-url: https://github.com/users/LP2851/projects/2
-          github-token: ${{ secrets.ACTION_ADD_TO_PROJECT }}
+          github-token: ${{ secrets.ACTION_TOKEN }}
