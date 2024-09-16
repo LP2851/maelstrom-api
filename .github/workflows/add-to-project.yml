@@ -1,19 +1,19 @@
-name: Add Issues and PRs to Project
+# name: Add Issues and PRs to Project
 
-on:
-  issues:
-    types:
-      - opened
-  pull_request:
-    types:
-      - opened
+# on:
+#   issues:
+#     types:
+#       - opened
+#   pull_request:
+#     types:
+#       - opened
 
-jobs:
-  add-to-project:
-    name: Add pull request to project
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/add-to-project@v1.0.2
-        with:
-          project-url: https://github.com/users/LP2851/projects/2
-          github-token: ${{ secrets.ACTION_TOKEN }}
+# jobs:
+#   add-to-project:
+#     name: Add pull request to project
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/add-to-project@v1.0.2
+#         with:
+#           project-url: https://github.com/users/LP2851/projects/2
+#           github-token: ${{ secrets.ACTION_TOKEN }}
