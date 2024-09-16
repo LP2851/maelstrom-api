@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v4
+      uses: gradle/actions/setup-gradle@v4.1.0
 
     - name: Build
       run: gradle clean build
@@ -44,4 +44,4 @@ jobs:
           distribution: 'temurin'
 
       - name: Generate and submit dependency graph
-        uses: gradle/actions/dependency-submission@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
+        uses: gradle/actions/dependency-submission@0d30c9111cf47a838eb69c06d13f3f51ab2ed76f # v4.0.0
